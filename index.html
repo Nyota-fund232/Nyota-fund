@@ -93,13 +93,18 @@ button {
 
 <script>
 const firebaseConfig = {
-  apiKey: "PASTE_YOUR_KEY",
-  authDomain: "PASTE_YOUR_DOMAIN",
-  projectId: "PASTE_YOUR_ID",
+  apiKey: "AIzaSyAgWGCweGTjjRlXhqbJ2qfs6c-Bh3xvOLk",
+  authDomain: "nyota-fund-76b55.firebaseapp.com",
+  projectId: "nyota-fund-76b55",
+  storageBucket: "nyota-fund-76b55.firebasestorage.app",
+  messagingSenderId: "339099643431",
+  appId: "1:339099643431:web:cad12507bc65092c2ee802",
+  measurementId: "G-CKSRP3NRJ6"
 };
 
-firebase.initializeApp(firebaseConfig);
-const auth = firebase.auth();
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 
 // REGISTER
 function register() {
